@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Inter:wght@300;400;500;600;700&display=swap');
+
+// ==================== Reset ====================
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif;
+  background-color: $yin-black;
+  color: $text-primary;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+// ==================== Scrollbar ====================
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: $yin-dark; }
+::-webkit-scrollbar-thumb { background: $yang-gold; border-radius: 3px; }
+
+// ==================== Global Utilities ====================
+
+// 毛玻璃卡片
+.glass-panel {
+  background: rgba(22, 20, 14, 0.72);
+  backdrop-filter: blur(18px) saturate(1.2);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+}
+
+// 金字渐变文字
+.gradient-text {
+  background: linear-gradient(135deg, $yang-light 0%, $yang-gold 50%, #8b6a10 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// ==================== Button Base ====================
+button {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+// ==================== Yin-Yang Decoration (CSS-only) ====================
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.15; }
+  50%       { opacity: 0.35; }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-18px); }
+}

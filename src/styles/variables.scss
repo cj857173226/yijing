@@ -1,0 +1,41 @@
+// ================================
+// 易经主题：阴阳色彩设计系统 (增强版)
+// ================================
+
+// 阳 - 鎏金色 / 极高光 (更亮更纯)
+$yang-gold:   #f7c948; // 更明亮的琥珀色
+$yang-light:  #fce588; // 极高光色彩
+$yang-deep:   #bb8a10; // 较深的金属铜色
+$yang-glow:   rgba(247, 201, 72, 0.45); // 增强发光强度
+
+// 阴 - 虚无黑 / 深邃 (带有一丝紫青趋势，增加深度)
+$yin-black:   #05050a; // 更纯净的深黑
+$yin-dark:    #0d0d18; // 深靛青背景层
+$yin-mid:     #161625; // 较亮的背景块
+
+// 水 & 木 - 翡翠绿 (更具通透感)
+$jade-green:  #34e7e4; // 荧光青色
+$jade-dim:    rgba(52, 231, 228, 0.25);
+
+// 火 - 涅槃红 (更具张力)
+$cinnabar:    #ff5e57;
+
+// 文字 (提升亮度对比)
+$text-primary:   #fff1d4; // 接近白色的暖砂
+$text-secondary: #d4af37; // 金属副色
+$text-muted:     #8e7d5a; // 暗色辅助
+
+// 边框 & 玻璃材质 (透明度微调)
+$border-color:  rgba(247, 201, 72, 0.2); 
+$border-hover:  rgba(247, 201, 72, 0.6);
+$card-shadow:   0 12px 48px rgba(0, 0, 0, 0.8);
+$glow-shadow:   0 0 30px rgba(247, 201, 72, 0.3);
+
+// 动画
+$transition-base: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+// 旧变量映射
+$primary-color:   $yang-gold;
+$secondary-color: $jade-green;
+$bg-main:         $yin-black;
+$bg-card:         $yin-dark;
