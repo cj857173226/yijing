@@ -9,7 +9,7 @@ import FiveElementsView from '@/views/FiveElementsView.vue';
 import BasicsView from '@/views/BasicsView.vue';
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
